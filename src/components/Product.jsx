@@ -34,7 +34,7 @@ const Product = () => {
 
   return (
     <>
-      <h2 className="hidden" id="marketplace">Products</h2>
+      {/* <h2 className="hidden" id="marketplace">Products</h2> */}
       {loading && <p className="text-center text-3xl"> Loading...</p>}
       <div className="container grid grid-cols-4 gap-3 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:mx-auto px-10">
         <ProductItem data={data} func={showImg}></ProductItem>

@@ -9,6 +9,7 @@ import Modal from "./components/Modal";
 import { useState } from "react";
 import Login from "./components/Login";
 import Product from "./components/Product";
+import Team from "./components/Team";
 
 function App() {
   const [signIn, setSignIn] = useState(false);
@@ -44,8 +45,9 @@ function App() {
           <Login toggle={toggleActions} submit={showSignInToaster} />
         </Modal>
       )}
-
+      <p id="marketplace"></p>
       <Product />
+      <Team/>
       <ToastContainer />
       <Footer />
     </div>
