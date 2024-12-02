@@ -19,12 +19,17 @@ const Product = () => {
   }
 
   useEffect(() => {
-    setLoading(true);
-    axios
-      .get(`${API_URL}/products`)
-      .then((res) => (console.log(res.data), setData(res.data.products)))
-      .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
+    try {
+      setLoading(true);
+      axios
+        .get(`${API_URL}/products`)
+        .then((res) => (console.log(res.data), setData(res.data.products)))
+        .catch((err) => console.error(err))
+        .finally(() => setLoading(false));
+      
+    } catch (error) {
+      console.log(error)
+    }
   }, []);
 
   return (
