@@ -18,6 +18,10 @@ export default {
           950: "#172554",
         },
       },
+      screens: {
+        'xs': '440px',
+        '2xs': '400px',
+      },
     },
     fontFamily: {
       body: [
