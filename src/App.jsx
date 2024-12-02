@@ -1,8 +1,6 @@
 import "./App.css";
-import Toaster from "./components/Toaster";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Product from "./components/Product";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -22,7 +20,7 @@ function App() {
   let showSignUpToaster = () => {
     setSignUp((p) => !p);
     toast("Sign Up success");
-  }
+  };
 
   let showSignInToaster = () => {
     setSignIn((p) => !p);
@@ -47,7 +45,7 @@ function App() {
         </Modal>
       )}
 
-      <Product/>
+      <Product />
       <ToastContainer />
       <Footer />
     </div>
